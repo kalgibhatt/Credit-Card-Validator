@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+	<h1><%= title %></h1>
+  <form action="/validate" id="CreditCard"> 		
+		<div class="box">
+		<div align="center">
+		<h2>Enter the credit card number to check its validation.</h2>
+			<table>
+				<tr>
+					<td style="font-size:25px">Credit Card Number : </td>
+					<td><input type="text" name="CreditCardNumber" placeholder="XXXXXXXXXXXXXXXX" id="num" tabindex="1" autofocus="autofocus" size="21" required="required" class="input"></td>
+				</tr>
+				<tr>
+					<td style="font-size:25px">Date : </td>
+					<td><input type="text" name="Date" placeholder="MM/YY" tabindex="2" autofocus="autofocus" required="required" size="6" class="input"></td>
+				</tr>	
+				<tr>
+					<td style="font-size:25px">CVV : </td>
+					<td><input type="text" name="CVV" placeholder="CVV(X)" tabindex="3" autofocus="autofocus" required="required" size="6" class="input"></td>
+				</tr>		
+				<tr align="center">
+					<td colspan="2">&nbsp;</td>
+				</tr>
+				<tr align="center">
+					<td colspan="2"><input type="submit" name="submit" tabindex="4" value="Validate" class="submit"></td>
+				</tr>
+			</table>
+		</div>
+		</div>
+	</form>
+  </body>
+</html>
